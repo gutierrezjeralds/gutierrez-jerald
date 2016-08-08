@@ -1,16 +1,105 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>#{get 'title' /}</title>
-        <meta charset="${_response_encoding}">
-        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
-        #{get 'moreStyles' /}
-        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
-        #{get 'moreScripts' /}
-    </head>
-    <body>
-        #{doLayout /}
-    </body>
+<head>
+    <title>#{get 'title' /}</title>
+    <meta charset="${_response_encoding}">
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/profile-icon.ico'}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/public/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/sass/stylesheets/mdb.css">
+    <link rel="stylesheet" type="text/css" href="/public/sass/stylesheets/fullcarousel.css">
+    <link rel="stylesheet" type="text/css" href="/public/sass/stylesheets/main.css">
+    #{get 'moreStyles' /}
+
+    <script type="text/javascript" src="/public/javascripts/angular.min.js"></script>
+    <script type="text/javascript" src="/public/javascripts/jquery-1.10.2.min.js"></script>
+    <script src="/public/mdbootstrap/js/tether.min.js"></script>
+    <script src="/public/mdbootstrap/js/bootstrap.min.js"></script>
+    <script src="/public/mdbootstrap/js/mdb.min.js"></script>
+    <!--<script src="/public/bootstrap/js/jquery.easing.min.js"></script>-->
+    <!--<script type="text/javascript" src="/public/javascripts/jquery.sticky.js"></script>-->
+    <script>
+        var website = angular.module('website', []);
+        website.controller('mainCtrl', function($scope) {
+            $scope.socialMedia = [
+                {
+                    socialTitle: "&{'socialFb'}",
+                    socialUrl: "https://www.facebook.com/OnesixJerald.BossdOTsupErman",
+                    socialIcon: "fa-facebook",
+                },
+                {
+                    socialTitle: "&{'socialSkype'}",
+                    socialUrl: "",
+                    socialIcon: "fa-skype",
+                },
+                {
+                    socialTitle: "&{'socialInsta'}",
+                    socialUrl: "https://www.instagram.com/gutierrezjerald/?hl=en",
+                    socialIcon: "fa-instagram",
+                },
+                {
+                    socialTitle: "&{'socialTwitter'}",
+                    socialUrl: "https://twitter.com/SenaJerald",
+                    socialIcon: "fa-twitter",
+                },
+            ];
+        });
+    </script>
+    <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+        $('.carousel').carousel({
+          interval: 4000
+        })
+    </script>
+    #{get 'moreScripts' /}
+</head>
+<body ng-app="website" data-spy="scroll" ng-controller="mainCtrl">
+    <!-- HOME -->
+    <div id="carousel-example-1" class="carousel slide carousel-fade home" data-ride="carousel" data-interval="false">
+        <div class="full-bg-img flex-center home-list">
+            <ul>
+                <li><h1>&{'myName'}</h1></li>
+                <li><p class="mySlogan">&{'mySlogan'}<span>|</span></p></li>
+                <li>
+                    <div class="socialMedia-item" ng-repeat="x in socialMedia" style="display:inline-block">
+                        <a href="{{x.socialUrl}}" class="btn btn-default btn-sm" target="_blank" data-toggle="tooltip" data-placement="top" title="{{x.socialTitle}}">
+                            <i class="fa {{x.socialIcon}} fa-1x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#Resume" class="btn btn-default btn-md flex-item">
+                        <i class="fa fa-file-text-o fa-1x" aria-hidden="true"></i>
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="view hm-black-light">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="view hm-black-light">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="view hm-black-light">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HOME -->
+
+    #{doLayout /}
+
+    <!-- mdBootstrap JS -->
+    <script src="/public/mdbootstrap/js/mdb.min.js"></script>
+    <!-- END -->
+</body>
 </html>

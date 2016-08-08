@@ -1,0 +1,15 @@
+/* line 2, ../sass/main.scss */
+.home .home-list {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+}
+/* line 8, ../sass/main.scss */
+.home .home-list ul li .mySlogan span {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}

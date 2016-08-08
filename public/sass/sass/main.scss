@@ -1,0 +1,17 @@
+.home{
+    .home-list{
+        position: absolute;
+        z-index: 1;
+        color: #fff;
+        ul li{
+            .mySlogan{
+                span{
+                  animation: blink 1s infinite;
+                }
+                @keyframes blink{
+                  to{opacity: .0;}
+                }
+            }
+        }
+    }
+}

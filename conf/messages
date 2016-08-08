@@ -1,3 +1,32 @@
 # You can specialize this file for each language.
 # For example, for French create a messages.fr file
 #
+
+#Home
+myName = JERALD GUTIERREZ
+mySlogan = I' am a Web Developer.
+
+#Main Header
+mainHome = Home
+mainAbout = About
+mainResume = Resume
+mainPortfolio = Portfolio
+mainContact = Contact
+
+#Social Media
+socialFb = Facebook
+socialSkype = Skype ID: gutierrez.jerald
+socialInsta = Instagram
+socialTwitter = Twitter
+
+#About Me
+aboutMe = ABOUT ME
+aboutInfo = Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+aboutSkillsHtml = HTML / HTML5
+aboutSkillsCss = CSS / CSS3
+aboutSkillsJavascript = JavaScript
+aboutSkillsJquery = JQuery
+aboutSkillsBootstrap = Bootstrap
+aboutSkillsSass = SASS
+aboutSkillsAngular = Angular JS
+aboutSkillsPhp = PHP
