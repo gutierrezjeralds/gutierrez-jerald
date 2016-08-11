@@ -1,0 +1,54 @@
+/* line 1, ../../sass/sass/main.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 4, ../../sass/sass/main.scss */
+body {
+  width: 100%;
+  min-height: 100%;
+  font-family: "Malgun Gothic", Helvetica, Arial;
+}
+
+/* line 9, ../../sass/sass/main.scss */
+.page960 {
+  width: 94%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 15, ../../sass/sass/main.scss */
+.home .home-list {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+}
+/* line 21, ../../sass/sass/main.scss */
+.home .home-list ul li .mySlogan span {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+/* line 31, ../../sass/sass/main.scss */
+.sticky-wrapper {
+  width: 100%;
+  z-index: 2;
+}
+/* line 35, ../../sass/sass/main.scss */
+.sticky-wrapper .navbar.bg-primary {
+  background: #2BBBAD !important;
+}
+/* line 39, ../../sass/sass/main.scss */
+.sticky-wrapper .navbar .navbar-desktop.navbar-height {
+  height: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* line 47, ../../sass/sass/main.scss */
+#sidenav-overlay {
+  z-index: 1;
+}

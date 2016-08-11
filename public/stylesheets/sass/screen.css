@@ -1,0 +1,89 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 1, ../../sass/sass/_common.scss */
+.push25 {
+  height: 25px;
+}
+
+/* line 4, ../../sass/sass/_common.scss */
+.push50 {
+  height: 50px;
+}
+
+/* line 7, ../../sass/sass/_common.scss */
+.push100 {
+  height: 100px;
+}
+
+/* line 10, ../../sass/sass/_common.scss */
+.clear {
+  clear: both;
+}
+
+/* line 13, ../../sass/sass/_common.scss */
+.text-indent {
+  text-indent: 20px;
+}
+
+/* line 16, ../../sass/sass/_common.scss */
+.bold {
+  font-weight: 600;
+}
+
+/* line 19, ../../sass/sass/_common.scss */
+.whiteFont {
+  color: #fff !important;
+}
+
+/* line 25, ../../sass/sass/_common.scss */
+h1, h2, h3, h4 {
+  padding: 0px;
+}
+
+/* line 28, ../../sass/sass/_common.scss */
+a {
+  cursor: pointer;
+}
+
+/* line 31, ../../sass/sass/_common.scss */
+.list-group {
+  box-shadow: none;
+}
+/* line 33, ../../sass/sass/_common.scss */
+.list-group .list-group-item {
+  background: none !important;
+  border: none !important;
+  display: inline-block !important;
+}
+
+@media screen and (min-width: 980px) {
+  /* line 2, ../../sass/sass/_grid.scss */
+  .lg-hide {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  /* line 8, ../../sass/sass/_grid.scss */
+  .md-hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 14, ../../sass/sass/_grid.scss */
+  .sm-hide {
+    display: none;
+  }
+
+  /* line 20, ../../sass/sass/_grid.scss */
+  #About .aboutBody .aboutBody-btn a {
+    width: 100% !important;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  /* line 29, ../../sass/sass/_grid.scss */
+  .mb-hide {
+    display: none;
+  }
+}

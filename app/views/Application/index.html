@@ -1,3 +1,138 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
+#{set 'moreScripts'}
+<script>
+website.controller('indexCtrl', function($scope) {
+    $scope.aboutSkillsList = [
+        {
+            aboutSkillsName: "&{'aboutSkillsHtml'}",
+            aboutSkillsValue: "95",
+        },
+        {
+            aboutSkillsName: "&{'aboutSkillsCss'}",
+            aboutSkillsValue: "95",
+        },
+        {
+            aboutSkillsName: "&{'aboutSkillsJavascript'}",
+            aboutSkillsValue: "95",
+        },
+        {
+            aboutSkillsName: "&{'aboutSkillsJquery'}",
+            aboutSkillsValue: "95",
+        },
+        {
+            aboutSkillsName: "&{'aboutSkillsBootstrap'}",
+            aboutSkillsValue: "95",
+        },
+        {
+            aboutSkillsName: "&{'aboutSkillsSass'}",
+            aboutSkillsValue: "95",
+        },
+        {
+            aboutSkillsName: "&{'aboutSkillsAngular'}",
+            aboutSkillsValue: "85",
+        },
+        {
+            aboutSkillsName: "&{'aboutSkillsPhp'}",
+            aboutSkillsValue: "80",
+        },
+    ];
+});
+</script>
+<script>
+$(document).ready(function(){
+    <!-- Animate Progress bar for mySkills -->
+    var go = true;
+    setTimeout(function(){
+        $('.progress-container .progress').each(function() {
+            var me = $(this);
+            var perc = me.attr("data-percentage");
+            //TODO: left and right text handling
+            var current_perc = 0;
+            var progress = setInterval(function() {
+                if (current_perc>=perc) {
+                    clearInterval(progress);
+                } else {
+                    current_perc +=1;
+                    me.css('width', (current_perc)+'%');
+                }
+                me.text((current_perc)+'%');
+            }, 80);
+        });
+    },300);
+    <!-- END -->
+});
+</script>
+#{/}
+
+<section id="index-content" ng-controller="indexCtrl">
+    <!-- About Section -->
+    <section id="About" class="container page960">
+        <div class="about-item row">
+            <div class="aboutTitle">
+                <h4 class="titleFont flex-center">&{'aboutMe'}</h4>
+                <div class="progressItemTitle progress">
+                    <div class="indeterminate" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="push50"></div>
+            <div class="aboutBody col-lg-12 col-md-12 col-sm-12">
+                <div class="aboutBody-image col-md-5">
+                    <!--<img class="img-thumbnail" src="/public/images/profile.jpg" />-->
+                    <img class="img-thumbnail" src="" />
+                </div>
+                <div class="aboutBody-info col-md-7">
+                    <p class="">&{'aboutInfo'}</p>
+                    <div class="page-scroll aboutBody-btn">
+                        <a href="#Contact" class="btn btn-default">
+                            <i class="fa fa-phone fa-1x" aria-hidden="true"></i>
+                            HIRE ME
+                        </a>
+                        <a href="#Portfolio" class="btn btn-default">
+                            <i class="fa fa-briefcase fa-1x" aria-hidden="true"></i>
+                            SEE PORTFOLIO
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="push50"></div>
+            <div class="aboutFooter col-lg-12 col-md-12 col-sm-12">
+                <div class="aboutFooter-list">
+                    <ul class="list-group">
+                        <li class="list-group-item aboutSkillsList" ng-repeat="x in aboutSkillsList">
+                            <p>{{x.aboutSkillsName}}</p>
+                            <div class="progress-container">
+                                <div class="progress progress-info"  data-percentage="{{x.aboutSkillsValue}}" data-toggle="tooltip" data-placement="bottom" title="{{x.aboutSkillsValue}}%" value="{{x.aboutSkillsValue}}" style="width:0%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <div class="push50"></div>
+    <!-- END -->
+
+    <!-- Resume -->
+    <section id="Resume">
+        <div>
+
+        </div>
+        <section class="parallax" id="resume-download">
+            <div class="container text-center flex-center">
+                <a download="Resume-Jerald-Update.pdf" href="public/resume-file/Resume-Jerald-Update.pdf" class="btn btn-default">
+                    <i class="fa fa-cloud-download fa-1x" aria-hidden="true"></i>
+                    Download CV
+                </a>
+            </div>
+        </section>
+        <div>
+
+        </div>
+    </section>
+    <!-- END Resume -->
+</section>

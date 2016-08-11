@@ -1,3 +1,16 @@
+html, body {
+    height: 100%;
+}
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family: "Malgun Gothic", Helvetica, Arial;
+}
+.page960 {
+    width: 94%;
+    max-width: 960px;
+    margin: 0 auto;
+}
 .home{
     .home-list{
         position: absolute;
@@ -14,4 +27,23 @@
             }
         }
     }
+}
+.sticky-wrapper{
+    width: 100%;
+    z-index: 2;
+    .navbar{
+        &.bg-primary{
+            background: #2BBBAD !important;
+        }
+        .navbar-desktop{
+            &.navbar-height{
+                height: 30px;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+#sidenav-overlay{
+    z-index: 1;
 }

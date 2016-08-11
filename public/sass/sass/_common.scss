@@ -1,0 +1,38 @@
+.push25{
+    height: 25px;
+}
+.push50{
+    height: 50px;
+}
+.push100{
+    height: 100px;
+}
+.clear{
+    clear: both;
+}
+.text-indent{
+    text-indent: 20px;
+}
+.bold{
+    font-weight: 600;
+}
+.whiteFont{
+    color: #fff !important;
+}
+.titleFont{
+    //color: #5cb85c;
+}
+h1, h2, h3, h4{
+    padding: 0px;
+}
+a{
+    cursor: pointer;
+}
+.list-group{
+    box-shadow: none;
+    .list-group-item{
+        background: none !important;
+        border: none !important;
+        display: inline-block !important;
+    }
+}

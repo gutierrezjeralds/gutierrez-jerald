@@ -1,0 +1,54 @@
+/* line 1, ../../sass/sass/index.scss */
+#index-content {
+  position: relative;
+}
+/* line 3, ../../sass/sass/index.scss */
+#index-content .menuItemBody {
+  padding-top: 5%;
+}
+/* line 7, ../../sass/sass/index.scss */
+#index-content .progressItemTitle.progress {
+  width: 200px !important;
+  margin: auto;
+}
+/* line 14, ../../sass/sass/index.scss */
+#index-content #About .aboutBody .aboutBody-image {
+  margin-bottom: 20px;
+}
+/* line 16, ../../sass/sass/index.scss */
+#index-content #About .aboutBody .aboutBody-image img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+/* line 24, ../../sass/sass/index.scss */
+#index-content #About .aboutBody .aboutBody-btn a {
+  margin: 10px 10px 0 0;
+}
+/* line 31, ../../sass/sass/index.scss */
+#index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList {
+  width: 50%;
+}
+/* line 33, ../../sass/sass/index.scss */
+#index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 15px;
+}
+/* line 37, ../../sass/sass/index.scss */
+#index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container .progress {
+  height: 14px;
+  border-radius: 4px;
+  font-size: 10px;
+  text-align: center;
+  color: #000;
+}
+/* line 43, ../../sass/sass/index.scss */
+#index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container .progress.progress-info {
+  background: #2BBBAD !important;
+}
+/* line 54, ../../sass/sass/index.scss */
+#index-content #Resume .parallax#resume-download {
+  background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+}
