@@ -30,3 +30,41 @@ aboutSkillsBootstrap = Bootstrap
 aboutSkillsSass = SASS
 aboutSkillsAngular = Angular JS
 aboutSkillsPhp = PHP
+
+#Education Background
+educTitle = EDUCATION
+educTertiary = Tertiary
+educTerYear = 2011 - 2015
+educTerProgram = Bachelor of Science in Information Systems
+educTerSchool = De La Salle Lipa
+educTerAdd = Lipa City, Batangas
+
+educPrimary = Primary
+educPriYear = 2007 - 2011
+educPriSchool = Alitagtag National High School
+educPriAdd = Dominador West, Alitagtag, Batangas
+
+educSecondary = Secondary
+educSecYear = 2001 - 2007
+educSecSchool = Dalipit West Elementary School
+educSecAdd = Dalipit West, Alitagtag, Batangas
+
+#Work Experience
+workExpTitle = EXPERIENCE
+workExpKinpo_1 = Kinpo Electronics Philippines Inc.
+workExpKinpo_2 = Software Engineer (Web Developer)
+workExpKinpo_3 = August 2015 – Up to present
+workExpKinpo_4 = - Website Maintenance
+workExpKinpo_5 = - Creating New Website
+
+workExpIntern_1 = Sorosoro Ibaba Development Cooperative
+workExpIntern_2 = On-the-Job Trainee
+workExpIntern_3 = July 2014 – October 2014
+workExpIntern_4 = - Create Web Internal Login System
+workExpIntern_5 = - Conduct training in SAP B1
+workExpIntern_6 = - Assist the staff for their training in SAP B1
+
+workExpStudent_1 = De La Salle Lipa
+workExpStudent_2 = Student Assistant
+workExpStudent_3 = April 2011 – March 2015
+workExpStudent_4 = - Trouble shooting of defective computers / laptops of the teachers, employees and school computers laboratory

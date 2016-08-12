@@ -3,52 +3,210 @@
   position: relative;
 }
 /* line 3, ../../sass/sass/index.scss */
-#index-content .menuItemBody {
-  padding-top: 5%;
+#index-content .divToFocus {
+  padding-top: 70px;
 }
-/* line 7, ../../sass/sass/index.scss */
+/* line 6, ../../sass/sass/index.scss */
+#index-content .div-section-menu {
+  margin-top: 10px;
+}
+/* line 10, ../../sass/sass/index.scss */
 #index-content .progressItemTitle.progress {
   width: 200px !important;
   margin: auto;
 }
-/* line 14, ../../sass/sass/index.scss */
+/* line 16, ../../sass/sass/index.scss */
+#index-content .parallax#body-interval-page1 {
+  background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+}
+/* line 19, ../../sass/sass/index.scss */
+#index-content .parallax#resume-download {
+  background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+}
+/* line 22, ../../sass/sass/index.scss */
+#index-content .parallax#body-interval-page2 {
+  background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+}
+/* line 28, ../../sass/sass/index.scss */
 #index-content #About .aboutBody .aboutBody-image {
   margin-bottom: 20px;
 }
-/* line 16, ../../sass/sass/index.scss */
+/* line 30, ../../sass/sass/index.scss */
 #index-content #About .aboutBody .aboutBody-image img {
   width: 300px;
   height: 300px;
   display: block;
   margin: auto;
 }
-/* line 24, ../../sass/sass/index.scss */
+/* line 38, ../../sass/sass/index.scss */
 #index-content #About .aboutBody .aboutBody-btn a {
   margin: 10px 10px 0 0;
 }
-/* line 31, ../../sass/sass/index.scss */
+/* line 45, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList {
   width: 50%;
+  margin-top: -20px;
 }
-/* line 33, ../../sass/sass/index.scss */
+/* line 48, ../../sass/sass/index.scss */
+#index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList p {
+  margin: -5px 0 5px 0;
+}
+/* line 51, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container {
   border: 1px solid #ccc;
-  border-radius: 4px;
   height: 15px;
 }
-/* line 37, ../../sass/sass/index.scss */
+/* line 54, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container .progress {
   height: 14px;
-  border-radius: 4px;
   font-size: 10px;
   text-align: center;
   color: #000;
 }
-/* line 43, ../../sass/sass/index.scss */
+/* line 59, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container .progress.progress-info {
   background: #2BBBAD !important;
 }
-/* line 54, ../../sass/sass/index.scss */
-#index-content #Resume .parallax#resume-download {
-  background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+/* line 70, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+/* line 74, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+/* line 84, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li {
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 87, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li:before {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/* line 92, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/* line 98, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+/* line 100, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li.timeline-inverted .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+/* line 106, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+/* line 112, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li.timeline-inverted .timeline-panel .timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+/* line 117, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li.timeline-inverted .timeline-panel .timeline-body p {
+  margin-bottom: 0;
+}
+/* line 119, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li.timeline-inverted .timeline-panel .timeline-body p p {
+  margin-top: 5px;
+}
+/* line 123, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li.timeline-inverted .timeline-panel .timeline-body ul {
+  margin-bottom: 0;
+}
+/* line 129, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+/* line 138, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+/* line 149, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+/* line 161, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #999999;
+  z-index: 1;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+/* line 178, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li .timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+/* line 181, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li .timeline-badge.success {
+  background-color: #3f903f !important;
+}
+/* line 184, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li .timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+/* line 187, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li .timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+/* line 190, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content .timeline li .timeline-badge.info {
+  background-color: #5bc0de !important;
 }
