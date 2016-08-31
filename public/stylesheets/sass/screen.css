@@ -37,21 +37,29 @@
   color: #fff !important;
 }
 
-/* line 25, ../../sass/sass/_common.scss */
+/* line 22, ../../sass/sass/_common.scss */
+.titleFont {
+  color: #2BBBAD;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/* line 28, ../../sass/sass/_common.scss */
 h1, h2, h3, h4 {
   padding: 0px;
 }
 
-/* line 28, ../../sass/sass/_common.scss */
+/* line 31, ../../sass/sass/_common.scss */
 a {
   cursor: pointer;
 }
 
-/* line 31, ../../sass/sass/_common.scss */
+/* line 34, ../../sass/sass/_common.scss */
 .list-group {
   box-shadow: none;
 }
-/* line 33, ../../sass/sass/_common.scss */
+/* line 36, ../../sass/sass/_common.scss */
 .list-group .list-group-item {
   background: none !important;
   border: none !important;

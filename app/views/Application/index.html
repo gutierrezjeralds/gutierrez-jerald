@@ -1,7 +1,11 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
+#{set 'moreStyles'}
+<link rel="stylesheet" type="text/css" href="/public/stylesheets/sass/magnific-popup.css">
+#{/}
 
 #{set 'moreScripts'}
+<script type="text/javascript" src="/public/javascripts/jquery.magnific-popup.min.js"></script>
 <script>
 website.controller('indexCtrl', function($scope) {
     $scope.aboutSkillsList = [
@@ -120,6 +124,21 @@ website.controller('indexCtrl', function($scope) {
             faIcon: "fa-globe",
         },
     ];
+
+    $scope.portfolio = [
+        {
+            portfolioImg: "http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg",
+            portfolioUrl: "",
+        },
+        {
+            portfolioImg: "http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg",
+            portfolioUrl: "",
+        },
+        {
+            portfolioImg: "http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg",
+            portfolioUrl: "",
+        },
+    ];
 });
 </script>
 <script>
@@ -142,144 +161,132 @@ $(document).ready(function(){
             }, 80);
         });
     },300);
+
+
+    $('.image-popup').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+	});
 });
 </script>
 #{/}
 
 <section id="index-content" ng-controller="indexCtrl">
     <!-- About Section -->
-    <section id="About" class="container page960 div-section-menu">
-        <div class="about-item row">
-            <div class="aboutTitle">
-                <h4 class="titleFont flex-center">&{'aboutMe'}</h4>
-                <div class="progressItemTitle progress">
-                    <div class="indeterminate" style="width: 70%"></div>
-                </div>
-            </div>
-            <div class="clear"></div>
-            <div class="push50"></div>
-            <div class="aboutBody col-lg-12 col-md-12 col-sm-12">
-                <div class="aboutBody-image col-md-5">
-                    <img class="img-thumbnail" src="/public/images/profile.jpg" />
-                    <!--<img class="img-thumbnail" src="" />-->
-                </div>
-                <div class="aboutBody-info col-md-7">
-                    <p class="">&{'aboutInfo'}</p>
-                    <div class="page-scroll aboutBody-btn">
-                        <a href="#Contact" class="btn btn-default">
-                            <i class="fa fa-phone fa-1x" aria-hidden="true"></i>
-                            HIRE ME
-                        </a>
-                        <a href="#Portfolio" class="btn btn-default">
-                            <i class="fa fa-briefcase fa-1x" aria-hidden="true"></i>
-                            SEE PORTFOLIO
-                        </a>
+    <section id="About" class="div-section-menu">
+        <div class="container page960">
+            <div class="row">
+                <div class="about-content col-lg-12 col-md-12 col-sm-12">
+                    <div class="aboutTitle">
+                        <h4 class="titleFont flex-center">&{'aboutMe'}</h4>
+                        <!--<div class="progressItemTitle progress">-->
+                        <!--<div class="indeterminate" style="width: 70%"></div>-->
+                        <!--</div>-->
                     </div>
-                </div>
-            </div>
-            <div class="clear"></div>
-            <div class="push50"></div>
-            <div class="aboutFooter col-lg-12 col-md-12 col-sm-12">
-                <div class="aboutFooter-list">
-                    <ul class="list-group">
-                        <li class="list-group-item aboutSkillsList" ng-repeat="item in aboutSkillsList">
-                            <p>{{item.aboutSkillsName}}</p>
-                            <div class="progress-container">
-                                <div class="progress progress-info"  data-percentage="{{item.aboutSkillsValue}}" data-toggle="tooltip" data-placement="bottom" title="{{item.aboutSkillsValue}}%" value="{{item.aboutSkillsValue}}" style="width:0%;"></div>
+                    <div class="clear"></div>
+                    <div class="push25"></div>
+                    <div class="aboutBody">
+                        <div class="aboutBody-image col-md-5">
+                            <img class="img-thumbnail" src="/public/images/profile.jpg" />
+                            <!--<img class="img-thumbnail" src="" />-->
+                        </div>
+                        <div class="aboutBody-info col-md-7">
+                            <p class="">&{'aboutInfo'}</p>
+                            <div class="page-scroll aboutBody-btn">
+                                <a href="#Portfolio" class="btn btn-default">
+                                    <i class="fa fa-briefcase fa-1x" aria-hidden="true"></i>
+                                    SEE PORTFOLIO
+                                </a>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="push25"></div>
+                    <div class="aboutFooter">
+                        <div class="aboutFooter-list">
+                            <ul class="list-group">
+                                <li class="list-group-item aboutSkillsList" ng-repeat="item in aboutSkillsList">
+                                    <p>{{item.aboutSkillsName}}</p>
+                                    <div class="progress-container">
+                                        <div class="progress progress-info"  data-percentage="{{item.aboutSkillsValue}}" data-toggle="tooltip" data-placement="bottom" title="{{item.aboutSkillsValue}}%" value="{{item.aboutSkillsValue}}" style="width:0%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="clear"></div>
-    <div class="push50"></div>
     <!-- END -->
 
-    <section class="parallax" id="body-interval-page1">
-        <div class="container text-center flex-center">
+    <div class="clear"></div>
+    <div class="push25"></div>
 
+    <section class="parallax" id="hire-me">
+        <div class="container text-center flex-center page-scroll">
+            <a href="#Contact" class="btn btn-default btn-lg">
+                <i class="fa fa-phone fa-1x" aria-hidden="true"></i>
+                HIRE ME
+            </a>
         </div>
     </section>
 
     <!-- Resume -->
-    <div class="clear"></div>
-    <div class="push50"></div>
     <section id="Resume" class="div-section-menu">
-        <section class="container page960">
-            <div class="row">
-                <div class="educ-content col-lg-12 col-md-12 col-sm-12">
-                    <div class="educTitle">
-                        <h4 class="titleFont flex-center">&{'educTitle'}</h4>
-                        <div class="progressItemTitle progress">
-                            <div class="indeterminate" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="push50"></div>
-                    <div class="educBody timeline-content">
-                        <ul class="timeline" ng-repeat="item in educBackground">
-                            <li class="{{item.invertedClass}}">
-                                <div class="timeline-badge {{item.badgeClass}}"><i class="fa {{item.faIcon}}" aria-hidden="true"></i></div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">
-                                            {{item.educTitle}} <span class="hidden-sm-down">({{item.educYear}})</span>
-                                        </h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p>
-                                            {{item.educSchool}}<br>
-                                            {{item.educAdd}}<br>
-                                            {{item.educProgram}}
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="parallax" id="resume-download">
-            <div class="container text-center flex-center">
-                <a download="Resume-Jerald-Update.pdf" href="public/resume-file/Resume-Jerald-Update.pdf" class="btn btn-default btn-lg">
-                    <i class="fa fa-cloud-download fa-1x" aria-hidden="true"></i>
-                    Download CV
-                </a>
-            </div>
-        </section>
-        <div class="clear"></div>
-        <div class="push25"></div>
         <section class="container page960">
             <div class="row">
                 <div class="work-content col-lg-12 col-md-12 col-sm-12">
                     <div class="workTitle">
                         <h4 class="titleFont flex-center">&{'workExpTitle'}</h4>
-                        <div class="progressItemTitle progress">
-                            <div class="indeterminate" style="width: 70%"></div>
-                        </div>
+                        <!--<div class="progressItemTitle progress">-->
+                            <!--<div class="indeterminate" style="width: 70%"></div>-->
+                        <!--</div>-->
                     </div>
                     <div class="clear"></div>
-                    <div class="push50"></div>
-                    <div class="workBody timeline-content">
-                        <ul class="timeline" ng-repeat="item in workExperience">
-                            <li class="{{item.invertedClass}}">
-                                <div class="timeline-badge {{item.badgeClass}}"><i class="fa {{item.faIcon}}" aria-hidden="true"></i></div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4 class="timeline-title">
-                                            {{item.workExpDate}}
-                                        </h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p>
-                                            <span class="bold">{{item.workExpTitle}}</span><br>
-                                            {{item.workExpPos}}<br>
-                                            <span ng-repeat="work in item.workExpJob">{{work.workExpDo}}</span>
-                                        </p>
-                                    </div>
+                    <div class="push25"></div>
+                    <div class="workBody">
+                        <ul class="timeline-content">
+                            <li ng-repeat="item in workExperience">
+                                <div class="time-date">
+                                    <span>{{item.workExpDate}}</span>
+                                </div>
+                                <i class="time-icon fa {{item.faIcon}} fa-2x" aria-hidden="true"></i>
+                                <div class="time-details">
+                                    <h3>{{item.workExpTitle}}</h3>
+                                    <h4>{{item.workExpPos}}</h4>
+                                    <span ng-repeat="work in item.workExpJob">{{work.workExpDo}}</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="push50"></div>
+                <div class="educ-content col-lg-12 col-md-12 col-sm-12">
+                    <div class="educTitle">
+                        <h4 class="titleFont flex-center">&{'educTitle'}</h4>
+                        <!--<div class="progressItemTitle progress">-->
+                            <!--<div class="indeterminate" style="width: 70%"></div>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="clear"></div>
+                    <div class="push25"></div>
+                    <div class="educBody">
+                        <ul class="timeline-content">
+                            <li ng-repeat="item in educBackground">
+                                <div class="time-date">
+                                    <span>{{item.educYear}}</span>
+                                </div>
+                                <i class="time-icon fa {{item.faIcon}} fa-2x" aria-hidden="true"></i>
+                                <div class="time-details">
+                                    <h3>{{item.educSchool}}</h3>
+                                    <h4>{{item.educProgram}}</h4>
+                                    <p>{{item.educAdd}}</p>
                                 </div>
                             </li>
                         </ul>
@@ -287,13 +294,57 @@ $(document).ready(function(){
                 </div>
             </div>
         </section>
+        <div class="clear"></div>
+        <div class="push50"></div>
     </section>
     <!-- END Resume -->
 
-    <section class="parallax" id="body-interval-page2">
+    <section class="parallax" id="resume-download">
         <div class="container text-center flex-center">
-
+            <a download="Resume-Jerald-Update.pdf" href="public/resume-file/Resume-Jerald-Update.pdf" class="btn btn-default btn-lg">
+                <i class="fa fa-cloud-download fa-1x" aria-hidden="true"></i>
+                Download CV
+            </a>
         </div>
     </section>
+
+    <!-- Portfolio -->
+    <section id="Portfolio" class="div-section-menu">
+        <div class="container page960">
+            <div class="row">
+                <div class="portfolio-content col-lg-12 col-md-12 col-sm-12">
+                    <div class="portfolioTitle">
+                        <h4 class="titleFont flex-center">&{'portfolioTitle'}</h4>
+                        <!--<div class="progressItemTitle progress">-->
+                        <!--<div class="indeterminate" style="width: 70%"></div>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="clear"></div>
+                    <div class="push25"></div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-item col-lg-4 col-md-4 col-sm-6" ng-repeat="item in portfolio">
+                            <div class="img-wrapper mix">
+                                <img src="{{item.portfolioImg}}" class="img-responsive" />
+                            </div>
+                            <div class="img-overlay">
+                                <span>
+                                    <a href="{{item.portfolioImg}}" class="image-popup">
+                                        <i class="fa fa-camera-retro"></i>
+                                    </a>
+                                    <a href="{{item.portfolioUrl}}">
+                                        <i class="fa fa-chain"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Portfolio -->
+
+    <div class="clear"></div>
+    <div class="push50"></div>
 
 </section>
