@@ -10,9 +10,6 @@
         }
     }
     .parallax{
-            .btn-default{
-                background: transparent;
-            }
         &#hire-me{
             background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
         }
@@ -24,24 +21,14 @@
         }
     }
     #About{
-        .aboutBody{
-            .aboutBody-image{
-                margin-bottom: 20px;
-                img{
-                    width: 300px;
-                    height: 300px;
-                    @media screen and (max-width: 767px){
-                        display: block;
-                        margin: auto;
-                    }
+        .card-wrapper {
+             margin: 0 !important;
+            @media screen and (max-width: 767px) {
+                &.card-height{
+                    height: 630px !important;
                 }
             }
-            .aboutBody-btn{
-                a{
-                    margin: 10px 10px 0 0;
-                }
-            }
-        }
+         }
         .aboutFooter{
             .aboutFooter-list{
                 .aboutSkillsList{
@@ -166,45 +153,30 @@
         .portfolio-body{
             .portfolio-item{
                 padding: 0;
-                margin: 0 0 20px 0;
-                .img-wrapper{
-                    display: inline-block;
-                    position: relative;
-                    img{
-                        width: 100% !important;
-                        height: auto;
+                margin: 0 10px 20px;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                &.col-lg-4 {
+                    width: 30.333333%;
+                }
+                @media screen and (min-width : 768px) and (max-width : 979px){
+                    &.col-md-4 {
+                        width: 30.333333%;
                     }
                 }
-                .img-overlay{
-                    position: absolute;
-                    text-align: center;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    opacity: 0;
-                    -webkit-transition: all 0.3s ease-out;
-                    -moz-transition: all 0.3s ease-out;
-                    -o-transition: all 0.3s ease-out;
-                    transition: all 0.3s ease-out;
-                    background: rgba(43,187,173,.6);
-                    span{
-                        position: absolute;
-                        top:40%;
-                        color: #FFF;
-                        left:38%;
-                        i{
-                            width: 50px;
-                            height: 50px;
-                            border: 1px solid #FFF;
-                            color: #FFF;
-                            font-size: 20px;
-                            text-align: center;
-                            line-height: 50px;
-                        }
+                @media screen and (max-width: 767px){
+                    &.col-sm-6 {
+                        width: 92.333333%;
                     }
+                }
+                .card-block{
+                    opacity: 0;
+                    height: 230px;
                     &:hover{
                         opacity: 1;
+                        background: rgba(43,187,173,.6);
                     }
                 }
             }

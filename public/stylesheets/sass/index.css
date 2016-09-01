@@ -12,78 +12,64 @@
   margin: auto;
 }
 /* line 13, ../../sass/sass/index.scss */
-#index-content .parallax .btn-default {
-  background: transparent;
-}
-/* line 16, ../../sass/sass/index.scss */
 #index-content .parallax#hire-me {
   background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
 }
-/* line 19, ../../sass/sass/index.scss */
+/* line 16, ../../sass/sass/index.scss */
 #index-content .parallax#resume-download {
   background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
 }
-/* line 22, ../../sass/sass/index.scss */
+/* line 19, ../../sass/sass/index.scss */
 #index-content .parallax#body-interval-page2 {
   background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
 }
-/* line 28, ../../sass/sass/index.scss */
-#index-content #About .aboutBody .aboutBody-image {
-  margin-bottom: 20px;
-}
-/* line 30, ../../sass/sass/index.scss */
-#index-content #About .aboutBody .aboutBody-image img {
-  width: 300px;
-  height: 300px;
+/* line 24, ../../sass/sass/index.scss */
+#index-content #About .card-wrapper {
+  margin: 0 !important;
 }
 @media screen and (max-width: 767px) {
-  /* line 30, ../../sass/sass/index.scss */
-  #index-content #About .aboutBody .aboutBody-image img {
-    display: block;
-    margin: auto;
+  /* line 27, ../../sass/sass/index.scss */
+  #index-content #About .card-wrapper.card-height {
+    height: 630px !important;
   }
 }
-/* line 40, ../../sass/sass/index.scss */
-#index-content #About .aboutBody .aboutBody-btn a {
-  margin: 10px 10px 0 0;
-}
-/* line 47, ../../sass/sass/index.scss */
+/* line 34, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList {
   width: 50%;
   margin-top: -20px;
 }
-/* line 50, ../../sass/sass/index.scss */
+/* line 37, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList p {
   margin: -5px 0 5px 0;
 }
-/* line 53, ../../sass/sass/index.scss */
+/* line 40, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container {
   border: 1px solid #ccc;
   height: 15px;
 }
-/* line 56, ../../sass/sass/index.scss */
+/* line 43, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container .progress {
   height: 14px;
   font-size: 10px;
   text-align: center;
   color: #000;
 }
-/* line 61, ../../sass/sass/index.scss */
+/* line 48, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container .progress.progress-info {
   background: #2BBBAD !important;
 }
-/* line 70, ../../sass/sass/index.scss */
+/* line 57, ../../sass/sass/index.scss */
 #index-content #Resume {
   background: #F7F8F8;
 }
-/* line 72, ../../sass/sass/index.scss */
+/* line 59, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content {
   margin: 30px 0 0 0;
   padding: 0;
   list-style: none;
   position: relative;
 }
-/* line 77, ../../sass/sass/index.scss */
+/* line 64, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content:before {
   content: '';
   position: absolute;
@@ -94,22 +80,22 @@
   margin-left: -5px;
   background: #2BBBAD;
 }
-/* line 87, ../../sass/sass/index.scss */
+/* line 74, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li {
   position: relative;
 }
-/* line 89, ../../sass/sass/index.scss */
+/* line 76, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-date {
   display: block;
   width: 25%;
   padding-right: 100px;
   position: absolute;
 }
-/* line 94, ../../sass/sass/index.scss */
+/* line 81, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-date span {
   display: block;
 }
-/* line 96, ../../sass/sass/index.scss */
+/* line 83, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-date span:last-child {
   font-size: 15px;
   padding: 15px 0px;
@@ -119,7 +105,7 @@
   text-align: center;
   text-transform: uppercase;
 }
-/* line 107, ../../sass/sass/index.scss */
+/* line 94, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-icon {
   width: 40px;
   height: 40px;
@@ -137,7 +123,7 @@
   top: 0;
   margin: 0 0 0 -25px;
 }
-/* line 124, ../../sass/sass/index.scss */
+/* line 111, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-details {
   margin: 0 0 15px 25%;
   background: #f3f3f3;
@@ -149,17 +135,17 @@
   position: relative;
   border-radius: 2px;
 }
-/* line 134, ../../sass/sass/index.scss */
+/* line 121, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-details h3 {
   font-size: 18px;
   color: #575454;
 }
-/* line 138, ../../sass/sass/index.scss */
+/* line 125, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-details h4 {
   font-size: 15px;
   color: #2BBBAD;
 }
-/* line 142, ../../sass/sass/index.scss */
+/* line 129, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-details p, #index-content #Resume .timeline-content li .time-details span {
   font-size: 15px;
   font-weight: 400;
@@ -167,7 +153,7 @@
   letter-spacing: 0.9px;
   color: #050505;
 }
-/* line 149, ../../sass/sass/index.scss */
+/* line 136, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-details:after {
   right: 100%;
   border: solid transparent;
@@ -179,54 +165,38 @@
   border-width: 10px;
   top: 10px;
 }
-/* line 167, ../../sass/sass/index.scss */
+/* line 154, ../../sass/sass/index.scss */
 #index-content #Portfolio .portfolio-body .portfolio-item {
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 10px 20px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-/* line 170, ../../sass/sass/index.scss */
-#index-content #Portfolio .portfolio-body .portfolio-item .img-wrapper {
-  display: inline-block;
-  position: relative;
+/* line 161, ../../sass/sass/index.scss */
+#index-content #Portfolio .portfolio-body .portfolio-item.col-lg-4 {
+  width: 30.333333%;
 }
-/* line 173, ../../sass/sass/index.scss */
-#index-content #Portfolio .portfolio-body .portfolio-item .img-wrapper img {
-  width: 100% !important;
-  height: auto;
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  /* line 165, ../../sass/sass/index.scss */
+  #index-content #Portfolio .portfolio-body .portfolio-item.col-md-4 {
+    width: 30.333333%;
+  }
 }
-/* line 178, ../../sass/sass/index.scss */
-#index-content #Portfolio .portfolio-body .portfolio-item .img-overlay {
-  position: absolute;
-  text-align: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+@media screen and (max-width: 767px) {
+  /* line 170, ../../sass/sass/index.scss */
+  #index-content #Portfolio .portfolio-body .portfolio-item.col-sm-6 {
+    width: 92.333333%;
+  }
+}
+/* line 174, ../../sass/sass/index.scss */
+#index-content #Portfolio .portfolio-body .portfolio-item .card-block {
   opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  background: rgba(43, 187, 173, 0.6);
+  height: 230px;
 }
-/* line 191, ../../sass/sass/index.scss */
-#index-content #Portfolio .portfolio-body .portfolio-item .img-overlay span {
-  position: absolute;
-  top: 40%;
-  color: #FFF;
-  left: 38%;
-}
-/* line 196, ../../sass/sass/index.scss */
-#index-content #Portfolio .portfolio-body .portfolio-item .img-overlay span i {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #FFF;
-  color: #FFF;
-  font-size: 20px;
-  text-align: center;
-  line-height: 50px;
-}
-/* line 206, ../../sass/sass/index.scss */
-#index-content #Portfolio .portfolio-body .portfolio-item .img-overlay:hover {
+/* line 177, ../../sass/sass/index.scss */
+#index-content #Portfolio .portfolio-body .portfolio-item .card-block:hover {
   opacity: 1;
+  background: rgba(43, 187, 173, 0.6);
 }

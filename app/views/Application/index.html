@@ -162,6 +162,16 @@ $(document).ready(function(){
         });
     },300);
 
+    $('.card-wrapper').css("height","800px");
+    $('.about-rotate-1').click(function(){
+        $('.card-wrapper').css("height","500px");
+        $('#cardWrapper').addClass("card-height");
+    });
+    $('.about-rotate-2').click(function(){
+        $('.card-wrapper').css("height","800px");
+        $('#cardWrapper').removeClass("card-height");
+    });
+
 
     $('.image-popup').magnificPopup({
 		type: 'image',
@@ -177,45 +187,70 @@ $(document).ready(function(){
 
 <section id="index-content" ng-controller="indexCtrl">
     <!-- About Section -->
-    <section id="About" class="div-section-menu">
-        <div class="container page960">
+    <section id="About" class="">
+        <div class="container-fluid">
             <div class="row">
-                <div class="about-content col-lg-12 col-md-12 col-sm-12">
-                    <div class="aboutTitle">
-                        <h4 class="titleFont flex-center">&{'aboutMe'}</h4>
-                        <!--<div class="progressItemTitle progress">-->
-                        <!--<div class="indeterminate" style="width: 70%"></div>-->
-                        <!--</div>-->
-                    </div>
-                    <div class="clear"></div>
-                    <div class="push25"></div>
-                    <div class="aboutBody">
-                        <div class="aboutBody-image col-md-5">
-                            <img class="img-thumbnail" src="/public/images/profile.jpg" />
-                            <!--<img class="img-thumbnail" src="" />-->
-                        </div>
-                        <div class="aboutBody-info col-md-7">
-                            <p class="">&{'aboutInfo'}</p>
-                            <div class="page-scroll aboutBody-btn">
-                                <a href="#Portfolio" class="btn btn-default">
-                                    <i class="fa fa-briefcase fa-1x" aria-hidden="true"></i>
-                                    SEE PORTFOLIO
-                                </a>
+                <div class="card-wrapper" id="cardWrapper">
+                    <div id="card-1" class="card-rotating effect__click">
+                        <div class="face front">
+                            <div class="card-up" style="height:35%;">
+                                <img src="http://mdbootstrap.com/images/reg/reg%20(35).jpg" class="img-fluid">
+                            </div>
+                            <div class="avatar"><img src="/public/images/profile.jpg" class="img-circle img-responsive">
+                            </div>
+                            <div class="card-block page960">
+                                <div class="aboutBody">
+                                    <h4>&{'myName'}</h4>
+                                    <p>&{'aboutPos'}</p>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="push25"></div>
+                                <div class="aboutFooter">
+                                    <div class="aboutFooter-list">
+                                        <ul class="list-group">
+                                            <li class="list-group-item aboutSkillsList" ng-repeat="item in aboutSkillsList">
+                                                <p>{{item.aboutSkillsName}}</p>
+                                                <div class="progress-container">
+                                                    <div class="progress progress-info"  data-percentage="{{item.aboutSkillsValue}}" data-toggle="tooltip" data-placement="bottom" title="{{item.aboutSkillsValue}}%" value="{{item.aboutSkillsValue}}" style="width:0%;"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="page-scroll">
+                                    <a href="#faceBack" class="rotate-btn about-rotate-1" data-card="card-1">
+                                        <i class="fa fa-repeat"></i>
+                                        Click here to rotate
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="push25"></div>
-                    <div class="aboutFooter">
-                        <div class="aboutFooter-list">
-                            <ul class="list-group">
-                                <li class="list-group-item aboutSkillsList" ng-repeat="item in aboutSkillsList">
-                                    <p>{{item.aboutSkillsName}}</p>
-                                    <div class="progress-container">
-                                        <div class="progress progress-info"  data-percentage="{{item.aboutSkillsValue}}" data-toggle="tooltip" data-placement="bottom" title="{{item.aboutSkillsValue}}%" value="{{item.aboutSkillsValue}}" style="width:0%;"></div>
+                        <div class="face back" id="faceBack">
+                            <div class="page960">
+                                <div class="push50"></div>
+                                <div class="aboutTitle">
+                                    <h4 class="titleFont flex-center">&{'aboutMe'}</h4>
+                                    <!--<div class="progressItemTitle progress">-->
+                                    <!--<div class="indeterminate" style="width: 70%"></div>-->
+                                    <!--</div>-->
+                                </div>
+                                <hr>
+                                <div class="aboutBody-info">
+                                    <p class="">&{'aboutInfo'}</p>
+                                    <div class="page-scroll aboutBody-btn">
+                                        <a href="#Portfolio" class="btn btn-default">
+                                            <i class="fa fa-briefcase fa-1x" aria-hidden="true"></i>
+                                            SEE PORTFOLIO
+                                        </a>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                                <hr>
+                                <a class="rotate-btn about-rotate-2" data-card="card-1">
+                                    <i class="fa fa-undo"></i>
+                                    Click here to rotate back
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -224,12 +259,9 @@ $(document).ready(function(){
     </section>
     <!-- END -->
 
-    <div class="clear"></div>
-    <div class="push25"></div>
-
     <section class="parallax" id="hire-me">
         <div class="container text-center flex-center page-scroll">
-            <a href="#Contact" class="btn btn-default btn-lg">
+            <a href="#Contact" class="btn btn-white-outline btn-lg">
                 <i class="fa fa-phone fa-1x" aria-hidden="true"></i>
                 HIRE ME
             </a>
@@ -301,7 +333,7 @@ $(document).ready(function(){
 
     <section class="parallax" id="resume-download">
         <div class="container text-center flex-center">
-            <a download="Resume-Jerald-Update.pdf" href="public/resume-file/Resume-Jerald-Update.pdf" class="btn btn-default btn-lg">
+            <a download="Resume-Jerald-Update.pdf" href="public/resume-file/Resume-Jerald-Update.pdf" class="btn btn-white-outline btn-lg">
                 <i class="fa fa-cloud-download fa-1x" aria-hidden="true"></i>
                 Download CV
             </a>
@@ -322,19 +354,16 @@ $(document).ready(function(){
                     <div class="clear"></div>
                     <div class="push25"></div>
                     <div class="portfolio-body">
-                        <div class="portfolio-item col-lg-4 col-md-4 col-sm-6" ng-repeat="item in portfolio">
-                            <div class="img-wrapper mix">
-                                <img src="{{item.portfolioImg}}" class="img-responsive" />
-                            </div>
-                            <div class="img-overlay">
-                                <span>
-                                    <a href="{{item.portfolioImg}}" class="image-popup">
+                        <div class="card-overlay portfolio-item col-lg-4 col-md-4 col-sm-6" ng-repeat="item in portfolio" style="background-image: url({{item.portfolioImg}});">
+                            <div class="white-text text-xs-center">
+                                <div class="card-block flex-center">
+                                    <a href="{{item.portfolioImg}}" class="btn btn-lg btn-white-outline image-popup">
                                         <i class="fa fa-camera-retro"></i>
                                     </a>
-                                    <a href="{{item.portfolioUrl}}">
+                                    <a class="btn btn-lg btn-white-outline">
                                         <i class="fa fa-chain"></i>
                                     </a>
-                                </span>
+                                </div>
                             </div>
                         </div>
                     </div>
