@@ -12,64 +12,69 @@
   margin: auto;
 }
 /* line 13, ../../sass/sass/index.scss */
-#index-content .parallax#hire-me {
-  background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+#index-content .parallax .btn {
+  color: #000 !important;
 }
 /* line 16, ../../sass/sass/index.scss */
-#index-content .parallax#resume-download {
-  background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+#index-content .parallax#hire-me {
+  background-image: url("/public/images/background/slide2.jpg");
 }
 /* line 19, ../../sass/sass/index.scss */
-#index-content .parallax#body-interval-page2 {
-  background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+#index-content .parallax#resume-download {
+  background-image: url("/public/images/background/slide2.jpg");
 }
-/* line 24, ../../sass/sass/index.scss */
+/* line 22, ../../sass/sass/index.scss */
+#index-content .parallax#body-interval-page2 {
+  background-image: url("/public/images/background/slide2.jpg");
+}
+/* line 27, ../../sass/sass/index.scss */
 #index-content #About .card-wrapper {
   margin: 0 !important;
 }
 @media screen and (max-width: 767px) {
-  /* line 27, ../../sass/sass/index.scss */
+  /* line 30, ../../sass/sass/index.scss */
   #index-content #About .card-wrapper.card-height {
     height: 630px !important;
   }
 }
-/* line 34, ../../sass/sass/index.scss */
+/* line 37, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList {
   width: 50%;
   margin-top: -20px;
 }
-/* line 37, ../../sass/sass/index.scss */
+/* line 40, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList p {
   margin: -5px 0 5px 0;
 }
-/* line 40, ../../sass/sass/index.scss */
+/* line 43, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container {
   border: 1px solid #ccc;
-  height: 15px;
+  height: 19px;
+  background: #f3f3f3;
 }
-/* line 43, ../../sass/sass/index.scss */
+/* line 47, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container .progress {
-  height: 14px;
-  font-size: 10px;
+  height: 18px;
+  font-size: 12px;
   text-align: center;
   color: #000;
 }
-/* line 48, ../../sass/sass/index.scss */
+/* line 52, ../../sass/sass/index.scss */
 #index-content #About .aboutFooter .aboutFooter-list .aboutSkillsList .progress-container .progress.progress-info {
   background: #2BBBAD !important;
 }
-/* line 57, ../../sass/sass/index.scss */
+/* line 61, ../../sass/sass/index.scss */
 #index-content #Resume {
-  background: #F7F8F8;
+  background-image: url("/public/images/background/bgGreyDots.jpg");
 }
-/* line 59, ../../sass/sass/index.scss */
+/* line 64, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content {
   margin: 30px 0 0 0;
   padding: 0;
   list-style: none;
   position: relative;
 }
-/* line 64, ../../sass/sass/index.scss */
+/* line 69, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content:before {
   content: '';
   position: absolute;
@@ -80,22 +85,22 @@
   margin-left: -5px;
   background: #2BBBAD;
 }
-/* line 74, ../../sass/sass/index.scss */
+/* line 79, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li {
   position: relative;
 }
-/* line 76, ../../sass/sass/index.scss */
+/* line 81, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-date {
   display: block;
   width: 25%;
   padding-right: 100px;
   position: absolute;
 }
-/* line 81, ../../sass/sass/index.scss */
+/* line 86, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-date span {
   display: block;
 }
-/* line 83, ../../sass/sass/index.scss */
+/* line 88, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-date span:last-child {
   font-size: 15px;
   padding: 15px 0px;
@@ -105,7 +110,7 @@
   text-align: center;
   text-transform: uppercase;
 }
-/* line 94, ../../sass/sass/index.scss */
+/* line 99, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-icon {
   width: 40px;
   height: 40px;
@@ -123,10 +128,10 @@
   top: 0;
   margin: 0 0 0 -25px;
 }
-/* line 111, ../../sass/sass/index.scss */
+/* line 116, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-details {
   margin: 0 0 15px 25%;
-  background: #f3f3f3;
+  background: #F7F8F8;
   color: #888;
   padding: 20px;
   font-size: 14px;
@@ -135,17 +140,17 @@
   position: relative;
   border-radius: 2px;
 }
-/* line 121, ../../sass/sass/index.scss */
+/* line 126, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-details h3 {
   font-size: 18px;
   color: #575454;
 }
-/* line 125, ../../sass/sass/index.scss */
+/* line 130, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-details h4 {
   font-size: 15px;
   color: #2BBBAD;
 }
-/* line 129, ../../sass/sass/index.scss */
+/* line 134, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-details p, #index-content #Resume .timeline-content li .time-details span {
   font-size: 15px;
   font-weight: 400;
@@ -153,7 +158,7 @@
   letter-spacing: 0.9px;
   color: #050505;
 }
-/* line 136, ../../sass/sass/index.scss */
+/* line 141, ../../sass/sass/index.scss */
 #index-content #Resume .timeline-content li .time-details:after {
   right: 100%;
   border: solid transparent;
@@ -165,7 +170,7 @@
   border-width: 10px;
   top: 10px;
 }
-/* line 154, ../../sass/sass/index.scss */
+/* line 159, ../../sass/sass/index.scss */
 #index-content #Portfolio .portfolio-body .portfolio-item {
   padding: 0;
   margin: 0 10px 20px;
@@ -173,30 +178,48 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-/* line 161, ../../sass/sass/index.scss */
+/* line 168, ../../sass/sass/index.scss */
 #index-content #Portfolio .portfolio-body .portfolio-item.col-lg-4 {
   width: 30.333333%;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 165, ../../sass/sass/index.scss */
+  /* line 172, ../../sass/sass/index.scss */
   #index-content #Portfolio .portfolio-body .portfolio-item.col-md-4 {
     width: 30.333333%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 170, ../../sass/sass/index.scss */
+  /* line 177, ../../sass/sass/index.scss */
   #index-content #Portfolio .portfolio-body .portfolio-item.col-sm-6 {
     width: 92.333333%;
   }
 }
-/* line 174, ../../sass/sass/index.scss */
+/* line 181, ../../sass/sass/index.scss */
 #index-content #Portfolio .portfolio-body .portfolio-item .card-block {
   opacity: 0;
   height: 230px;
 }
-/* line 177, ../../sass/sass/index.scss */
+/* line 184, ../../sass/sass/index.scss */
 #index-content #Portfolio .portfolio-body .portfolio-item .card-block:hover {
   opacity: 1;
   background: rgba(43, 187, 173, 0.6);
+}
+/* line 193, ../../sass/sass/index.scss */
+#index-content #Contact {
+  background-image: url("/public/images/background/bgGreyDots.jpg");
+}
+/* line 197, ../../sass/sass/index.scss */
+#index-content #Contact .contact-body .md-form label {
+  left: 17px !important;
+}
+/* line 199, ../../sass/sass/index.scss */
+#index-content #Contact .contact-body .md-form label.active {
+  -webkit-transform: translateY(-40%) !important;
+  -moz-transform: translateY(-40%) !important;
+  -ms-transform: translateY(-40%) !important;
+  -o-transform: translateY(-40%) !important;
+  transform: translateY(-40%) !important;
 }

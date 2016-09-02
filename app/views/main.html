@@ -28,21 +28,25 @@
                     socialTitle: "&{'socialFb'}",
                     socialUrl: "https://www.facebook.com/OnesixJerald.BossdOTsupErman",
                     socialIcon: "fa-facebook",
+                    socialBtn: "btn-fb",
                 },
                 {
                     socialTitle: "&{'socialSkype'}",
                     socialUrl: "",
                     socialIcon: "fa-skype",
+                    socialBtn: "btn-li",
                 },
                 {
                     socialTitle: "&{'socialInsta'}",
                     socialUrl: "https://www.instagram.com/gutierrezjerald/?hl=en",
                     socialIcon: "fa-instagram",
+                    socialBtn: "btn-ins",
                 },
                 {
                     socialTitle: "&{'socialTwitter'}",
                     socialUrl: "https://twitter.com/SenaJerald",
                     socialIcon: "fa-twitter",
+                    socialBtn: "btn-tw",
                 },
             ];
         });
@@ -201,6 +205,27 @@
 
     <section class="content-for-index">
         #{doLayout /}
+    </section>
+
+    <section class="footer">
+        <footer class="page-footer center-on-small-only">
+            <div class="social-section">
+                <ul>
+                    <li>
+                        <div class="socialMedia-item" ng-repeat="item in socialMedia" style="display:inline-block">
+                            <a href="{{item.socialUrl}}" class="btn btn-default btn-floating btn-small {{item.socialBtn}}" target="_blank" data-toggle="tooltip" data-placement="top" title="{{item.socialTitle}}">
+                                <i class="fa {{item.socialIcon}} fa-1x" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    <span>&{'copyRight'}</span>
+                </div>
+            </div>
+        </footer>
     </section>
 
     <!-- mdBootstrap JS -->

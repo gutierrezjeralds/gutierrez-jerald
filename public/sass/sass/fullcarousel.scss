@@ -19,20 +19,43 @@ body,
     height: 100%;
 }
 
+.carousel-item {
+    filter: grayscale;
+    filter: brightness(80%);
+    -webkit-filter: grayscale;
+    -webkit-filter: brightness(80%);
+    -moz-filter: grayscale;
+    -moz-filter: brightness(80%);
+    -o-filter: grayscale;
+    -o-filter: brightness(80%);
+    -ms-filter: grayscale;
+    -ms-filter: brightness(80%);
+}
+
 .carousel-item:nth-child(1) {
     background-image: url("http://mdbootstrap.com/images/regular/nature/img%20(54).jpg");
+    //background-image: url('/public/images/background/slide1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .carousel-item:nth-child(2) {
     background-image: url("http://mdbootstrap.com/images/regular/nature/img%20(4).jpg");
+    //background-image: url('/public/images/background/slide2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .carousel-item:nth-child(3) {
     background-image: url("http://mdbootstrap.com/images/regular/nature/img%20(3).jpg");
+    //background-image: url('/public/images/background/slide3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(4) {
+    background-image: url("http://mdbootstrap.com/images/regular/nature/img%20(3).jpg");
+    //background-image: url('/public/images/background/slide4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

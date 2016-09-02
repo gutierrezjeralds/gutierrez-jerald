@@ -52,3 +52,9 @@ body {
 #sidenav-overlay {
   z-index: 1;
 }
+
+/* line 51, ../../sass/sass/main.scss */
+.footer .page-footer {
+  margin-top: 0px;
+  background: #2BBBAD !important;
+}

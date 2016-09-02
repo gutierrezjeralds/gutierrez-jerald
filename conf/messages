@@ -4,7 +4,7 @@
 
 #Home
 myName = JERALD GUTIERREZ
-mySlogan = I' am a Web Developer.
+mySlogan = Trust me, I'm a Developer.
 
 #Main Header
 mainHome = Home
@@ -13,6 +13,9 @@ mainResume = Resume
 mainPortfolio = Portfolio
 mainContact = Contact
 
+#Footer
+copyRight = © 2016 Copyright Gutierrez, Jerald S.
+
 #Social Media
 socialFb = Facebook
 socialSkype = Skype ID: gutierrez.jerald
@@ -20,6 +23,7 @@ socialInsta = Instagram
 socialTwitter = Twitter
 
 #About Me
+aboutName = Jerald Seña Gutierrez
 aboutPos = Web Developer - Front-End
 aboutMe = ABOUT ME
 aboutInfo = Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -72,3 +76,13 @@ workExpStudent_4 = - Trouble shooting of defective computers / laptops of the te
 
 #Portfolio
 portfolioTitle = MY WORKS
+
+#Contact
+contactTitle = CONTACT
+contactAdd = Dalipit West, Alitagtag, Batangas, 4205
+contactEmail = gutierrez.jeralds@yahoo.com
+contactPhone = (+63)949-800-8471
+yourName = Enter your name
+yourEmail = Enter your email
+yourSubject = Enter your subject
+yourMessage = Enter your message

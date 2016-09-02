@@ -20,21 +20,42 @@ body,
 }
 
 /* line 22, ../../sass/sass/fullcarousel.scss */
+.carousel-item {
+  filter: grayscale;
+  filter: brightness(80%);
+  -webkit-filter: grayscale;
+  -webkit-filter: brightness(80%);
+  -moz-filter: grayscale;
+  -moz-filter: brightness(80%);
+  -o-filter: grayscale;
+  -o-filter: brightness(80%);
+  -ms-filter: grayscale;
+  -ms-filter: brightness(80%);
+}
+
+/* line 35, ../../sass/sass/fullcarousel.scss */
 .carousel-item:nth-child(1) {
   background-image: url("http://mdbootstrap.com/images/regular/nature/img%20(54).jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 28, ../../sass/sass/fullcarousel.scss */
+/* line 42, ../../sass/sass/fullcarousel.scss */
 .carousel-item:nth-child(2) {
   background-image: url("http://mdbootstrap.com/images/regular/nature/img%20(4).jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 34, ../../sass/sass/fullcarousel.scss */
+/* line 49, ../../sass/sass/fullcarousel.scss */
 .carousel-item:nth-child(3) {
+  background-image: url("http://mdbootstrap.com/images/regular/nature/img%20(3).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 56, ../../sass/sass/fullcarousel.scss */
+.carousel-item:nth-child(4) {
   background-image: url("http://mdbootstrap.com/images/regular/nature/img%20(3).jpg");
   background-repeat: no-repeat;
   background-size: cover;

@@ -10,14 +10,17 @@
         }
     }
     .parallax{
+        .btn{
+            color: #000 !important;
+        }
         &#hire-me{
-            background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+            background-image: url('/public/images/background/slide2.jpg');
         }
         &#resume-download{
-            background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+            background-image: url('/public/images/background/slide2.jpg');
         }
         &#body-interval-page2{
-            background-image: url(http://brandflow.pl/wp-content/uploads/2015/09/slider3.jpg);
+            background-image: url('/public/images/background/slide2.jpg');
         }
     }
     #About{
@@ -39,10 +42,11 @@
                     }
                     .progress-container{
                         border: 1px solid #ccc;
-                        height: 15px;
+                        height: 19px;
+                        background: #f3f3f3;
                         .progress{
-                            height: 14px;
-                            font-size: 10px;
+                            height: 18px;
+                            font-size: 12px;
                             text-align: center;
                             color: #000;
                             &.progress-info{
@@ -55,7 +59,8 @@
         }
     }
     #Resume{
-        background: #F7F8F8;
+        //background: #F7F8F8;
+        background-image: url('/public/images/background/bgGreyDots.jpg');
         .timeline-content{
             margin: 30px 0 0 0;
             padding: 0;
@@ -110,7 +115,7 @@
                 }
                 .time-details{
                     margin: 0 0 15px 25%;
-                    background: #f3f3f3;
+                    background: #F7F8F8;
                     color: #888;
                     padding: 20px;
                     font-size: 14px;
@@ -158,6 +163,8 @@
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
+                background-repeat:   no-repeat;
+                background-position: center center;
                 &.col-lg-4 {
                     width: 30.333333%;
                 }
@@ -177,6 +184,24 @@
                     &:hover{
                         opacity: 1;
                         background: rgba(43,187,173,.6);
+                    }
+                }
+            }
+        }
+    }
+
+    #Contact{
+        background-image: url('/public/images/background/bgGreyDots.jpg');
+        .contact-body{
+            .md-form{
+                label{
+                    left: 17px !important;
+                    &.active{
+                        -webkit-transform: translateY(-40%) !important;
+                        -moz-transform: translateY(-40%) !important;
+                        -ms-transform: translateY(-40%) !important;
+                        -o-transform: translateY(-40%) !important;
+                        transform: translateY(-40%) !important;
                     }
                 }
             }
