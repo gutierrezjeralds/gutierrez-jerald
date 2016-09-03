@@ -87,3 +87,10 @@ yourName = Enter your name
 yourEmail = Enter your email
 yourSubject = Enter your subject
 yourMessage = Enter your message
+
+#Buttons
+seeResume = Resume
+seePortfolio = See my Portfolio
+clickMe = Click Me
+downloadCV = Download CV
+contactSend = Submit
