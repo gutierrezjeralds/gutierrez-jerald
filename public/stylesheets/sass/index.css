@@ -211,15 +211,37 @@
 #index-content #Contact {
   background-image: url("/public/images/background/bgGreyDots.jpg");
 }
-/* line 197, ../../sass/sass/index.scss */
+/* line 196, ../../sass/sass/index.scss */
+#index-content #Contact .contact-body .card {
+  overflow: visible !important;
+}
+/* line 199, ../../sass/sass/index.scss */
+#index-content #Contact .contact-body .form-header {
+  color: #fff;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+/* line 213, ../../sass/sass/index.scss */
 #index-content #Contact .contact-body .md-form label {
   left: 17px !important;
 }
-/* line 199, ../../sass/sass/index.scss */
+/* line 215, ../../sass/sass/index.scss */
 #index-content #Contact .contact-body .md-form label.active {
   -webkit-transform: translateY(-40%) !important;
   -moz-transform: translateY(-40%) !important;
   -ms-transform: translateY(-40%) !important;
   -o-transform: translateY(-40%) !important;
   transform: translateY(-40%) !important;
+}
+/* line 224, ../../sass/sass/index.scss */
+#index-content #Contact .contact-body .contact-icon {
+  cursor: default;
 }

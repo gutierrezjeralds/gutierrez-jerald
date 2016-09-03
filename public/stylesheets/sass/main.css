@@ -37,23 +37,27 @@ body {
   width: 100%;
   z-index: 2;
 }
-/* line 35, ../../sass/sass/main.scss */
+/* line 34, ../../sass/sass/main.scss */
+.sticky-wrapper .navbar {
+  text-transform: uppercase;
+}
+/* line 36, ../../sass/sass/main.scss */
 .sticky-wrapper .navbar.bg-primary {
   background: #2BBBAD !important;
 }
-/* line 39, ../../sass/sass/main.scss */
+/* line 40, ../../sass/sass/main.scss */
 .sticky-wrapper .navbar .navbar-desktop.navbar-height {
   height: 30px;
   font-size: 16px;
   margin-top: 20px;
 }
 
-/* line 47, ../../sass/sass/main.scss */
+/* line 48, ../../sass/sass/main.scss */
 #sidenav-overlay {
   z-index: 1;
 }
 
-/* line 51, ../../sass/sass/main.scss */
+/* line 52, ../../sass/sass/main.scss */
 .footer .page-footer {
   margin-top: 0px;
   background: #2BBBAD !important;

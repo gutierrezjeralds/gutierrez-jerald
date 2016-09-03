@@ -4,7 +4,7 @@
 
 #Home
 myName = JERALD GUTIERREZ
-mySlogan = Trust me, I'm a Developer.
+mySlogan = Trust me, I'm a Developer!
 
 #Main Header
 mainHome = Home
@@ -75,10 +75,11 @@ workExpStudent_3 = April 2011 – March 2015
 workExpStudent_4 = - Trouble shooting of defective computers / laptops of the teachers, employees and school computers laboratory
 
 #Portfolio
-portfolioTitle = MY WORKS
+portfolioTitle = WORKS
 
 #Contact
 contactTitle = CONTACT
+contactHeader = Message us!
 contactAdd = Dalipit West, Alitagtag, Batangas, 4205
 contactEmail = gutierrez.jeralds@yahoo.com
 contactPhone = (+63)949-800-8471

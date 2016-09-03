@@ -46,20 +46,25 @@
 }
 
 /* line 28, ../../sass/sass/_common.scss */
+.btn {
+  text-transform: uppercase;
+}
+
+/* line 31, ../../sass/sass/_common.scss */
 h1, h2, h3, h4 {
   padding: 0px;
 }
 
-/* line 31, ../../sass/sass/_common.scss */
+/* line 34, ../../sass/sass/_common.scss */
 a {
   cursor: pointer;
 }
 
-/* line 34, ../../sass/sass/_common.scss */
+/* line 37, ../../sass/sass/_common.scss */
 .list-group {
   box-shadow: none;
 }
-/* line 36, ../../sass/sass/_common.scss */
+/* line 39, ../../sass/sass/_common.scss */
 .list-group .list-group-item {
   background: none !important;
   border: none !important;
