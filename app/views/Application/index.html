@@ -213,6 +213,16 @@ $(document).ready(function(){
     }
     google.maps.event.addDomListener(window, 'load', init_map);
 });
+
+    <!--function sendMail() {-->
+        <!--var link = "mailto:jgutierrez@kinpo.com.ph"-->
+                 <!--+ "&sender=" + escape(document.getElementById('contactEmail').value)-->
+                 <!--+ "&subject=" + escape(document.getElementById('contactSubject').value)-->
+                 <!--+ "&body=" + escape(document.getElementById('contactName').value) + "<br>" + escape(document.getElementById('contactTextarea').value)-->
+        <!--;-->
+
+        <!--window.location.href = link;-->
+    <!--}-->
 </script>
 #{/}
 
@@ -431,26 +441,26 @@ $(document).ready(function(){
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-user prefix"></i>
-                                        <input type="text" id="form3" class="form-control">
-                                        <label for="form3">&{'yourName'}</label>
+                                        <input type="text" id="contactName" class="form-control">
+                                        <label for="contactName">&{'yourName'}</label>
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-envelope prefix"></i>
-                                        <input type="text" id="form2" class="form-control">
-                                        <label for="form2">&{'yourEmail'}</label>
+                                        <input type="text" id="contactEmail" class="form-control">
+                                        <label for="contactEmail">&{'yourEmail'}</label>
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-tag prefix"></i>
-                                        <input type="text" id="form32" class="form-control">
-                                        <label for="form32">&{'yourSubject'}</label>
+                                        <input type="text" id="contactSubject" class="form-control">
+                                        <label for="contactSubject">&{'yourSubject'}</label>
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-pencil prefix"></i>
-                                        <textarea type="text" id="form8" class="md-textarea" length="250" maxlength="250"></textarea>
-                                        <label for="form8">&{'yourMessage'}</label>
+                                        <textarea type="text" id="contactTextarea" class="md-textarea" length="250" maxlength="250"></textarea>
+                                        <label for="contactTextarea">&{'yourMessage'}</label>
                                     </div>
                                     <div class="text-xs-center">
-                                        <a class="btn btn-default">
+                                        <a class="btn btn-default" onclick="sendMail(); return false">
                                             <i class="fa fa-paper-plane"></i>
                                             &{'contactSend'}
                                         </a>
