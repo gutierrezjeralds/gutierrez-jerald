@@ -127,23 +127,23 @@ website.controller('indexCtrl', function($scope) {
             portfolioUrl: "http://gutierrez.herokuapp.com/",
         },
         {
-            portfolioImg: "/public/images/background/slide1.jpg",
+            portfolioImg: "/public/images/portfolio/item-2.png",
+            portfolioUrl: "http://www.stage.xyz3dscan.com/",
+        },
+        {
+            portfolioImg: "/public/images/portfolio/item-3.png",
+            portfolioUrl: "http://www.stage.xyz3dscan.com/us_en/eCard",
+        },
+        {
+            portfolioImg: "",
             portfolioUrl: "",
         },
         {
-            portfolioImg: "/public/images/background/slide2.jpg",
+            portfolioImg: "",
             portfolioUrl: "",
         },
         {
-            portfolioImg: "/public/images/background/slide3.jpg",
-            portfolioUrl: "",
-        },
-        {
-            portfolioImg: "/public/images/background/slide4.jpg",
-            portfolioUrl: "",
-        },
-        {
-            portfolioImg: "/public/images/background/slide1.jpg",
+            portfolioImg: "",
             portfolioUrl: "",
         },
     ];
@@ -387,7 +387,7 @@ $(document).ready(function(){
                     <div class="portfolio-body">
                         <div class="card-overlay portfolio-item col-lg-4 col-md-4 col-sm-6" ng-repeat="item in portfolio" style="background-image: url({{item.portfolioImg}});">
                             <div class="white-text text-xs-center">
-                                <div class="card-block flex-center">
+                                <div class="card-block flex-center" ng-hide="item.portfolioImg == ''">
                                     <a href="{{item.portfolioImg}}" class="btn btn-lg btn-white-outline image-popup">
                                         <i class="fa fa-camera-retro"></i>
                                     </a>
