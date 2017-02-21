@@ -72,53 +72,78 @@ website.controller('indexCtrl', function($scope) {
     $scope.workExperience = [
         {
             workExpTitle: "&{'workExpKinpo_1'}",
+            workExpPromote: "&{'workExpKinpo_1_2'}",
             workExpPos: "&{'workExpKinpo_2'}",
             workExpDate: "&{'workExpKinpo_3'}",
             workExpJob:[
                 {
                     workExpDo: "&{'workExpKinpo_4'}",
+                    workExpDoLink: "http://www.xyz3dscan.com/"
                 },
                 {
                     workExpDo: "&{'workExpKinpo_5'}",
+                    workExpDoSub: "&{'workExpKinpo_5_2'}",
+                },
+                {
+                    workExpDo: "&{'workExpKinpo_6'}",
+                    workExpDoLink: "http://us.xyzprinting.com/"
+                },
+                {
+                    workExpDo: "&{'workExpKinpo_7'}",
+                    workExpDoLink: "http://www.xyz3dscan.com/us_en/eCard"
+                },
+                {
+                    workExpDo: "&{'workExpKinpo_8'}",
+                    workExpDoLink: "https://auth.xyzfamily.com/"
+                },
+                {
+                    workExpDo: "&{'workExpKinpo_9'}",
+                    workExpDoLink: "http://us.xyzprinting.com/"
+                },
+                {
+                    workExpDo: "&{'workExpKinpo_10'}",
+                },
+                {
+                    workExpDo: "&{'workExpKinpo_11'}",
                 },
             ],
             badgeClass: "danger",
             faIcon: "fa-code",
         },
-        {
-            workExpTitle: "&{'workExpIntern_1'}",
-            workExpPos: "&{'workExpIntern_2'}",
-            workExpDate: "&{'workExpIntern_3'}",
-            workExpJob:[
-                {
-                    workExpDo: "&{'workExpIntern_4'}",
-                },
-                {
-                    workExpDo: "&{'workExpIntern_5'}",
-                },
-                {
-                    workExpDo: "&{'workExpIntern_6'}",
-                },
-            ],
-            invertedClass: "timeline-inverted",
-            badgeClass: "info",
-            faIcon: "fa-file-word-o",
-        },
-        {
-            workExpTitle: "&{'workExpStudent_1'}",
-            workExpPos: "&{'workExpStudent_2'}",
-            workExpDate: "&{'workExpStudent_3'}",
-            workExpJob:[
-                {
-                    workExpDo: "&{'workExpStudent_4'}",
-                },
-                {
-                    workExpDo: "&{'workExpKinpo_5'}",
-                },
-            ],
-            badgeClass: "primary",
-            faIcon: "fa-globe",
-        },
+        <!--{-->
+            <!--workExpTitle: "&{'workExpIntern_1'}",-->
+            <!--workExpPos: "&{'workExpIntern_2'}",-->
+            <!--workExpDate: "&{'workExpIntern_3'}",-->
+            <!--workExpJob:[-->
+                <!--{-->
+                    <!--workExpDo: "&{'workExpIntern_4'}",-->
+                <!--},-->
+                <!--{-->
+                    <!--workExpDo: "&{'workExpIntern_5'}",-->
+                <!--},-->
+                <!--{-->
+                    <!--workExpDo: "&{'workExpIntern_6'}",-->
+                <!--},-->
+            <!--],-->
+            <!--invertedClass: "timeline-inverted",-->
+            <!--badgeClass: "info",-->
+            <!--faIcon: "fa-file-word-o",-->
+        <!--},-->
+        <!--{-->
+            <!--workExpTitle: "&{'workExpStudent_1'}",-->
+            <!--workExpPos: "&{'workExpStudent_2'}",-->
+            <!--workExpDate: "&{'workExpStudent_3'}",-->
+            <!--workExpJob:[-->
+                <!--{-->
+                    <!--workExpDo: "&{'workExpStudent_4'}",-->
+                <!--},-->
+                <!--{-->
+                    <!--workExpDo: "&{'workExpKinpo_5'}",-->
+                <!--},-->
+            <!--],-->
+            <!--badgeClass: "primary",-->
+            <!--faIcon: "fa-globe",-->
+        <!--},-->
     ];
 
     $scope.portfolio = [
@@ -128,15 +153,15 @@ website.controller('indexCtrl', function($scope) {
         },
         {
             portfolioImg: "/public/images/portfolio/item-2.png",
-            portfolioUrl: "http://www.stage.xyz3dscan.com/",
+            portfolioUrl: "http://www.xyz3dscan.com/",
         },
         {
             portfolioImg: "/public/images/portfolio/item-3.png",
-            portfolioUrl: "http://www.stage.xyz3dscan.com/us_en/eCard",
+            portfolioUrl: "http://www.xyz3dscan.com/us_en/eCard",
         },
         {
-            portfolioImg: "",
-            portfolioUrl: "",
+            portfolioImg: "/public/images/portfolio/item-4.png",
+            portfolioUrl: "http://www.stage.xyzprinting.com/IndexBannerView",
         },
         {
             portfolioImg: "",
@@ -212,6 +237,10 @@ $(document).ready(function(){
         var_marker.setMap(var_map);
     }
     google.maps.event.addDomListener(window, 'load', init_map);
+
+    if($('.time-details').find('a').attr('href') == ""){
+        $('.time-details').find('a').css("cursor","default");
+    }
 });
 
     <!--function sendMail() {-->
@@ -302,7 +331,7 @@ $(document).ready(function(){
 
     <section class="parallax" id="hire-me">
         <div class="container text-center flex-center page-scroll">
-            <a href="#Contact" class="btn btn-white-outline btn-lg">
+            <a href="#Contact" class="btn btn-default btn-lg">
                 <i class="fa fa-phone fa-1x" aria-hidden="true"></i>
                 &{'hireMe'}
             </a>
@@ -331,8 +360,13 @@ $(document).ready(function(){
                                 <i class="time-icon fa {{item.faIcon}} fa-2x" aria-hidden="true"></i>
                                 <div class="time-details">
                                     <h3>{{item.workExpTitle}}</h3>
+                                    <h3>{{item.workExpPromote}}</h3>
                                     <h4>{{item.workExpPos}}</h4>
-                                    <p ng-repeat="work in item.workExpJob">{{work.workExpDo}}</p>
+                                    <a ng-repeat="work in item.workExpJob" href="{{work.workExpDoLink}}" target="_blank">
+                                        <p>{{work.workExpDo}} <br>
+                                            <span class="workExpDoSub">{{work.workExpDoSub}}</span>
+                                        </p>
+                                    </a>
                                 </div>
                             </li>
                         </ul>
@@ -374,7 +408,7 @@ $(document).ready(function(){
 
     <section class="parallax" id="resume-download">
         <div class="container text-center flex-center">
-            <a download="Resume-Jerald-Update.pdf" href="public/resume-file/Resume-Jerald-Update.pdf" class="btn btn-white-outline btn-lg">
+            <a download="Resume-JeraldGutierrez.pdf" href="public/resume-file/Resume-JeraldGutierrez.pdf" class="btn btn-default btn-lg">
                 <i class="fa fa-cloud-download fa-1x" aria-hidden="true"></i>
                 &{'downloadCV'}
             </a>

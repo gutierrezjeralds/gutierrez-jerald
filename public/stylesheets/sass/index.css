@@ -170,7 +170,12 @@
   border-width: 10px;
   top: 10px;
 }
-/* line 159, ../../sass/sass/index.scss */
+/* line 152, ../../sass/sass/index.scss */
+#index-content #Resume .timeline-content li .time-details .workExpDoSub {
+  margin-left: 20px;
+  display: block;
+}
+/* line 163, ../../sass/sass/index.scss */
 #index-content #Portfolio .portfolio-body .portfolio-item {
   padding: 0;
   margin: 0 10px 20px;
@@ -181,41 +186,41 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 168, ../../sass/sass/index.scss */
+/* line 172, ../../sass/sass/index.scss */
 #index-content #Portfolio .portfolio-body .portfolio-item.col-lg-4 {
   width: 30.333333%;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 172, ../../sass/sass/index.scss */
+  /* line 176, ../../sass/sass/index.scss */
   #index-content #Portfolio .portfolio-body .portfolio-item.col-md-4 {
     width: 30.333333%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 177, ../../sass/sass/index.scss */
+  /* line 181, ../../sass/sass/index.scss */
   #index-content #Portfolio .portfolio-body .portfolio-item.col-sm-6 {
     width: 92.333333%;
   }
 }
-/* line 181, ../../sass/sass/index.scss */
+/* line 185, ../../sass/sass/index.scss */
 #index-content #Portfolio .portfolio-body .portfolio-item .card-block {
   opacity: 0;
   height: 230px;
 }
-/* line 184, ../../sass/sass/index.scss */
+/* line 188, ../../sass/sass/index.scss */
 #index-content #Portfolio .portfolio-body .portfolio-item .card-block:hover {
   opacity: 1;
   background: rgba(43, 187, 173, 0.6);
 }
-/* line 193, ../../sass/sass/index.scss */
+/* line 197, ../../sass/sass/index.scss */
 #index-content #Contact {
   background-image: url("/public/images/background/bgGreyDots.jpg");
 }
-/* line 196, ../../sass/sass/index.scss */
+/* line 200, ../../sass/sass/index.scss */
 #index-content #Contact .contact-body .card {
   overflow: visible !important;
 }
-/* line 199, ../../sass/sass/index.scss */
+/* line 203, ../../sass/sass/index.scss */
 #index-content #Contact .contact-body .form-header {
   color: #fff;
   text-align: center;
@@ -229,11 +234,11 @@
   border-radius: 2px;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
-/* line 213, ../../sass/sass/index.scss */
+/* line 217, ../../sass/sass/index.scss */
 #index-content #Contact .contact-body .md-form label {
   left: 17px !important;
 }
-/* line 215, ../../sass/sass/index.scss */
+/* line 219, ../../sass/sass/index.scss */
 #index-content #Contact .contact-body .md-form label.active {
   -webkit-transform: translateY(-40%) !important;
   -moz-transform: translateY(-40%) !important;
@@ -241,7 +246,7 @@
   -o-transform: translateY(-40%) !important;
   transform: translateY(-40%) !important;
 }
-/* line 224, ../../sass/sass/index.scss */
+/* line 228, ../../sass/sass/index.scss */
 #index-content #Contact .contact-body .contact-icon {
   cursor: default;
 }

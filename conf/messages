@@ -14,7 +14,7 @@ mainPortfolio = Portfolio
 mainContact = Contact
 
 #Footer
-copyRight = © 2016 Copyright Gutierrez, Jerald S.
+copyRight = © 2017 Copyright Gutierrez, Jerald S.
 
 #Social Media
 socialFb = Facebook
@@ -57,10 +57,18 @@ educSecAdd = Dalipit West, Alitagtag, Batangas
 #Work Experience
 workExpTitle = EXPERIENCE
 workExpKinpo_1 = Kinpo Electronics Philippines Inc.
-workExpKinpo_2 = Software Engineer (Web Developer)
+workExpKinpo_1_2 = Promoted as an Engineer B from Junior Engineer (November 2016)
+workExpKinpo_2 = Web Engineer
 workExpKinpo_3 = August 2015 – Up to present
-workExpKinpo_4 = - Website Maintenance
-workExpKinpo_5 = - Creating New Website
+workExpKinpo_4 = - Creating New Website for 3D Scan Gallery
+workExpKinpo_5 = - Creating eDM (Electronic Direct Email)
+workExpKinpo_5_2 = - Sending layout to mail providers using SoapUI
+workExpKinpo_6 = - Creating New Layout and flow of Banner Backstage for XYZprinting
+workExpKinpo_7 = - Inserting function for displaying and snapshot of 3D OBJ and STL file
+workExpKinpo_8 = - Modify some of the layout in XYZauth login
+workExpKinpo_9 = - Website Maintenance for XYZprinting
+workExpKinpo_10 = - Merging maintenance task into staging site using Mercurial SourceTree
+workExpKinpo_11 = - Restarting stage site using PuTTY
 
 workExpIntern_1 = Sorosoro Ibaba Development Cooperative
 workExpIntern_2 = On-the-Job Trainee
@@ -75,7 +83,7 @@ workExpStudent_3 = April 2011 – March 2015
 workExpStudent_4 = - Trouble shooting of defective computers / laptops of the teachers, employees and school computers laboratory
 
 #Portfolio
-portfolioTitle = WORKS
+portfolioTitle = Portfolio
 
 #Contact
 contactTitle = CONTACT
